@@ -14,7 +14,7 @@
 	</item>
 	<item label="PDF Viewer">
 		<action name="Execute">
-			<command>qpdfview</command>
+			<command>qpdf</command>
 		</action>
 	</item>
 	<item label="Picture Viewer">
@@ -46,7 +46,7 @@
 	</item>
 		<item label="Selection to clipboad">
 		<action name="Execute">
-			<command>scrot -s &apos;screenshot_%Y%m%d-%H%M%S_$wx$h.png&apos; -e &apos;mv $f $$(xdg-user-dir PICTURES) ; xclip -i < $$(xdg-user-dir PICTURES)/$f&apos;</command>
+			<command>scrot -s &apos;screenshot_%Y%m%d-%H%M%S_$wx$h.png&apos; -e &apos;mv $f $$(xdg-user-dir PICTURES) ; xcmenu -bi image/png &lt;$$(xdg-user-dir PICTURES)/$f&apos;</command>
 		</action>
 	</item>
 </menu>

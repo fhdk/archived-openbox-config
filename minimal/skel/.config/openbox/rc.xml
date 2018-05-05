@@ -382,27 +382,22 @@
     </keybind>
     <keybind key="W-f">
       <action name="Execute">
-        <command>exo-open --launch FileManager</command>
+        <command>pcmanfm</command>
       </action>
     </keybind>
     <keybind key="W-t">
       <action name="Execute">
-        <command>exo-open --launch TerminalEmulator</command>
+        <command>termite</command>
       </action>
     </keybind>
     <keybind key="W-w">
       <action name="Execute">
-        <command>exo-open --launch WebBrowser</command>
+        <command>epiphany</command>
       </action>
     </keybind>
     <keybind key="W-e">
       <action name="Execute">
         <command>subl3</command>
-      </action>
-    </keybind>
-    <keybind key="C-A-m">
-      <action name="Execute">
-        <command>xfce4-settings-manager</command>
       </action>
     </keybind>
     <keybind key="W-m">
@@ -412,7 +407,7 @@
     </keybind>
     <keybind key="W-v">
       <action name="Execute">
-        <command>pavucontrol</command>
+        <command>gnome-alsamixer</command>
       </action>
     </keybind>
     <keybind key="W-s">
@@ -422,7 +417,7 @@
     </keybind>
     <keybind key="W-Return">
       <action name="Execute">
-        <command>exo-open --launch TerminalEmulator</command>
+        <command>termite</command>
       </action>
     </keybind>
     <keybind key="A-F1">

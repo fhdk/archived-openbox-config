@@ -9,6 +9,8 @@ sleep 0.5; nitrogen --restore &
 sleep 0.5; manjaro-polybar-session &
 manjaro-conky-session &
 
+lxpolkit &
+
 # Openbox autostart
 sleep 1; ob-autostart -d &
 
