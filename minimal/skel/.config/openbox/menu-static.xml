@@ -9,7 +9,7 @@
 	</item>
 	<item label="Archive Manager">
 		<action name="Execute">
-			<command>file-roller</command>
+			<command>xarchiver</command>
 		</action>
 	</item>
 	<item label="PDF Viewer">
@@ -26,27 +26,27 @@
 <menu id="screenshot" label="Screenshot">
 	<item label="Screenshot Now">
 		<action name="Execute">
-			<command>scrot &apos;screenshot_%Y%m%d-%H%M%S_$wx$h.png&apos; -e &apos;mv $f $$(xdg-user-dir PICTURES) ; gpicview $$(xdg-user-dir PICTURES)/$f&apos;</command>
+			<command>scrot &apos;%Y%m%d-%H%M%S_$wx$h_screenshot.png&apos; -e &apos;mv $f $$(xdg-user-dir PICTURES) ; gpicview $$(xdg-user-dir PICTURES)/$f&apos;</command>
 		</action>
 	</item>
 	<item label="Screenshot in 5">
 		<action name="Execute">
-			<command>scrot -d 5 &apos;screenshot_%Y%m%d-%H%M%S_$wx$h.png&apos; -e &apos;mv $f $$(xdg-user-dir PICTURES) ; gpicview $$(xdg-user-dir PICTURES)/$f&apos;</command>
+			<command>scrot -d 5 &apos;%Y%m%d-%H%M%S_$wx$h_screenshot.png&apos; -e &apos;mv $f $$(xdg-user-dir PICTURES) ; gpicview $$(xdg-user-dir PICTURES)/$f&apos;</command>
 		</action>
 	</item>
 	<item label="Screenshot in 10">
 		<action name="Execute">
-			<command>scrot -d 10 &apos;screenshot_%Y%m%d-%H%M%S_$wx$h.png&apos; -e &apos;mv $f $$(xdg-user-dir PICTURES) ; gpicview $$(xdg-user-dir PICTURES)/$f&apos;</command>
+			<command>scrot -d 10 &apos;%Y%m%d-%H%M%S_$wx$h_screenshot.png&apos; -e &apos;mv $f $$(xdg-user-dir PICTURES) ; gpicview $$(xdg-user-dir PICTURES)/$f&apos;</command>
 		</action>
 	</item>
 	<item label="Screenshot With Selection">
 		<action name="Execute">
-			<command>scrot -s &apos;screenshot_%Y%m%d-%H%M%S_$wx$h.png&apos; -e &apos;mv $f $$(xdg-user-dir PICTURES) ; gpicview $$(xdg-user-dir PICTURES)/$f&apos;</command>
+			<command>scrot -s &apos;%Y%m%d-%H%M%S_$wx$h_screenshot.png&apos; -e &apos;mv $f $$(xdg-user-dir PICTURES) ; gpicview $$(xdg-user-dir PICTURES)/$f&apos;</command>
 		</action>
 	</item>
 		<item label="Selection to clipboad">
 		<action name="Execute">
-			<command>scrot -s &apos;screenshot_%Y%m%d-%H%M%S_$wx$h.png&apos; -e &apos;mv $f $$(xdg-user-dir PICTURES) ; xcmenu -bi image/png &lt;$$(xdg-user-dir PICTURES)/$f&apos;</command>
+			<command>scrot -s &apos;%Y%m%d-%H%M%S_$wx$h_screenshot.png&apos; -e &apos;mv $f $$(xdg-user-dir PICTURES) ; xcmenu -bi image/png &lt;$$(xdg-user-dir PICTURES)/$f&apos;</command>
 		</action>
 	</item>
 </menu>
@@ -139,7 +139,7 @@
 	</item>
 	<item label="File Manager">
 		<action name="Execute">
-			<command>thunar</command>
+			<command>pcmanfm-gtk3</command>
 		</action>
 	</item>
 	<item label="Web Browser">
@@ -149,7 +149,7 @@
 	</item>
 	<item label="Ḿail Reader">
 		<action name="Execute">
-			<command>sylpheed</command>
+			<command>sylpheed-claws</command>
 		</action>
 	</item>
 	<item label="Text Editor">
