@@ -14,7 +14,7 @@
 	</item>
 	<item label="PDF Viewer">
 		<action name="Execute">
-			<command>qpdf</command>
+			<command>qpdfview</command>
 		</action>
 	</item>
 	<item label="Picture Viewer">

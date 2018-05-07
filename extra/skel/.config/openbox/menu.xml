@@ -53,7 +53,7 @@
 </menu>
 <menu id="preferences" label="Preferences">
 	<menu id="obConfig" label="Openbox">
-		<item label="LX Appearance Configuration">
+		<item label="Appearance Configuration">
 			<action name="Execute">
 				<command>lxappearance</command>
 			</action>
