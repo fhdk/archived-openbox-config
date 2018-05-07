@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <openbox_menu>
+
 <menu id="accessories" label="Accessories">
 	<item label="Calculator">
 		<action name="Execute">
@@ -14,7 +15,7 @@
 	</item>
 	<item label="PDF Viewer">
 		<action name="Execute">
-			<command>epdfview</command>
+			<command>qpdfview</command>
 		</action>
 	</item>
 	<item label="Picture Viewer">
@@ -31,22 +32,22 @@
 <menu id="screenshot" label="Screenshot">
 	<item label="Screenshot Now">
 		<action name="Execute">
-			<command>scrot &apos;screenshot_%Y%m%d-%H%M%S_$wx$h.png&apos; -e &apos;mv $f $$(xdg-user-dir PICTURES) ; gpicview $$(xdg-user-dir PICTURES)/$f&apos;</command>
+			<command>scrot &quot;%Y%m%d-%H%M%S_$wx$h_screenshot.png&quot; -e &quot;mv $f $$(xdg-user-dir PICTURES) ; gpicview $$(xdg-user-dir PICTURES)/$f&quot;</command>
 		</action>
 	</item>
 	<item label="Screenshot in 5">
 		<action name="Execute">
-			<command>scrot -d 5 &apos;screenshot_%Y%m%d-%H%M%S_$wx$h.png&apos; -e &apos;mv $f $$(xdg-user-dir PICTURES) ; gpicview $$(xdg-user-dir PICTURES)/$f&apos;</command>
+			<command>scrot -d 5 &quot;%Y%m%d-%H%M%S_$wx$h_screenshot.png&quot; -e &quot;mv $f $$(xdg-user-dir PICTURES) ; gpicview $$(xdg-user-dir PICTURES)/$f&quot;</command>
 		</action>
 	</item>
 	<item label="Screenshot in 10">
 		<action name="Execute">
-			<command>scrot -d 10 &apos;screenshot_%Y%m%d-%H%M%S_$wx$h.png&apos; -e &apos;mv $f $$(xdg-user-dir PICTURES) ; gpicview $$(xdg-user-dir PICTURES)/$f&apos;</command>
+			<command>scrot -d 10 &quot;%Y%m%d-%H%M%S_$wx$h_screenshot.png&quot; -e &quot;mv $f $$(xdg-user-dir PICTURES) ; gpicview $$(xdg-user-dir PICTURES)/$f&quot;</command>
 		</action>
 	</item>
 	<item label="Screenshot With Selection">
 		<action name="Execute">
-			<command>scrot -s &apos;screenshot_%Y%m%d-%H%M%S_$wx$h.png&apos; -e &apos;mv $f $$(xdg-user-dir PICTURES) ; gpicview $$(xdg-user-dir PICTURES)/$f&apos;</command>
+			<command>scrot -s &quot;%Y%m%d-%H%M%S_$wx$h_screenshot.png&quot; -e &quot;mv $f $$(xdg-user-dir PICTURES) ; gpicview $$(xdg-user-dir PICTURES)/$f&quot;</command>
 		</action>
 	</item>
 </menu>
@@ -57,11 +58,11 @@
 				<command>lxappearance</command>
 			</action>
 		</item>
-		<item label="ObConf Appearance Configuration">
+		<item label="Openbox Configuration">
 			<action name="Execute">
 				<command>obconf</command>
 			</action>
-		</item>		
+		</item>
 		<item label="Menu Editor">
 			<action name="Execute">
 				<command>kickshaw</command>
@@ -135,7 +136,7 @@
 	</item>
 	<item label="Root File Manager">
 		<action name="Execute">
-			<command>gksu thunar</command>
+			<command>zensu thunar</command>
 		</action>
 	</item>
 	<item label="Audio Settings">
@@ -150,7 +151,7 @@
 	</item>
 	<item label="GParted">
 		<action name="Execute">
-			<command>gksu gparted</command>
+			<command>zensu gparted</command>
 		</action>
 	</item>
 	<item label="Preferred Applications">
@@ -191,9 +192,10 @@
 		<action name="Execute">
 			<command>subl3</command>
 		</action>
-	</item>	<separator/>
+	</item>
+	<separator/>
 	<menu id="applications" label="Applications" execute="/usr/bin/obmenu-generator -S ~/.config/obmenu-generator/applications.pl"/>
-	<menu id="accessories"/>	
+	<menu id="accessories"/>
 	<menu id="screenshot"/>
 	<separator/>
 	<menu id="pipe-placesmenu" label="Places" execute="manjaro-places-pipemenu --recent ~/"/>
