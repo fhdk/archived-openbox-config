@@ -139,7 +139,7 @@
 	</item>
 	<item label="File Manager">
 		<action name="Execute">
-			<command>pcmanfm-gtk3</command>
+			<command>pcmanfm</command>
 		</action>
 	</item>
 	<item label="Web Browser">
