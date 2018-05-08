@@ -2,7 +2,7 @@
 
 <openbox_menu>
 
-<menu id="accessories" label="Accessories">
+<menu id="utilities" label="Utilities">
 	<item label="Calculator">
 		<action name="Execute">
 			<command>galculator</command>
@@ -26,6 +26,30 @@
 	<item label="File Search">
 		<action name="Execute">
 			<command>catfish</command>
+		</action>
+	</item>
+</menu>
+<menu id="diskUtilities" label="Disk Utilities">
+	<item label="Testdisk">
+		<action name="Execute">
+			<command>termite -e "zensu testdisk"</command>
+		</action>
+	</item>
+	<item label="Clonezilla">
+		<action name="Execute">
+			<command>termite -e "zensu clonezilla"</command>
+		</action>
+	</item>
+	<item label="FS archiver">
+		<action name="Execute">
+			<command>termite -e "fsarchiver -h"</command>
+		</action>
+	</item>
+</menu>
+<menu id="networkUtilities" label="Network Utilities">
+	<item label="Zen Map">
+		<action name="Execute">
+			<command>zensu zenmap"</command>
 		</action>
 	</item>
 </menu>
@@ -194,9 +218,11 @@
 		</action>
 	</item>
 	<separator/>
-	<menu id="applications" label="Applications" execute="/usr/bin/obmenu-generator -S ~/.config/obmenu-generator/applications.pl"/>
-	<menu id="accessories"/>
+	<menu id="utilities"/>
+	<menu id="diskUtilities"/>
+	<menu id="networkUtilities"/>
 	<menu id="screenshot"/>
+	<menu id="applications" label="Applications" execute="/usr/bin/obmenu-generator -S ~/.config/obmenu-generator/applications.pl"/>
 	<separator/>
 	<menu id="pipe-placesmenu" label="Places" execute="manjaro-places-pipemenu --recent ~/"/>
 	<separator/>
