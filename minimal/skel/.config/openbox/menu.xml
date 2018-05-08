@@ -144,12 +144,12 @@
 	</item>
 	<item label="Web Browser">
 		<action name="Execute">
-			<command>falkon</command>
+			<command>basilisk</command>
 		</action>
 	</item>
-	<item label="Ḿail Reader">
+	<item label="Mail Reader">
 		<action name="Execute">
-			<command>sylpheed-claws</command>
+			<command>claws-mail</command>
 		</action>
 	</item>
 	<item label="Text Editor">

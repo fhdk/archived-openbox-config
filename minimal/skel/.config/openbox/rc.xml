@@ -372,12 +372,12 @@
     </keybind>
     <keybind key="Print">
       <action name="Execute">
-        <command>scrot 'screenshot_%Y%m%d-%H%M%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES) ; gpicview $$(xdg-user-dir PICTURES)/$f'</command>
+        <command>scrot '%Y%m%d-%H%M%S_$wx$h_screenshot.png' -e 'mv $f $$(xdg-user-dir PICTURES) ; gpicview $$(xdg-user-dir PICTURES)/$f'</command>
       </action>
     </keybind>
     <keybind key="A-Print">
       <action name="Execute">
-        <command>scrot -d 5 'screenshot_%Y%m%d-%H%M%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES) ; gpicview $$(xdg-user-dir PICTURES)/$f'</command>
+        <command>scrot -d 5 '%Y%m%d-%H%M%S_$wx$h_screenshot.png' -e 'mv $f $$(xdg-user-dir PICTURES) ; gpicview $$(xdg-user-dir PICTURES)/$f'</command>
       </action>
     </keybind>
     <keybind key="W-f">
@@ -392,7 +392,7 @@
     </keybind>
     <keybind key="W-w">
       <action name="Execute">
-        <command>epiphany</command>
+        <command>basilisk</command>
       </action>
     </keybind>
     <keybind key="W-e">
@@ -407,7 +407,7 @@
     </keybind>
     <keybind key="W-v">
       <action name="Execute">
-        <command>gnome-alsamixer</command>
+        <command>pavucontrol</command>
       </action>
     </keybind>
     <keybind key="W-s">
