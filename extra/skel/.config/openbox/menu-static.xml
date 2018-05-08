@@ -2,7 +2,7 @@
 
 <openbox_menu>
 
-<menu id="utilities" label="Utilities">
+<menu id="commonUtilities" label="Utilities">
 	<item label="Calculator">
 		<action name="Execute">
 			<command>galculator</command>
@@ -218,7 +218,7 @@
 		</action>
 	</item>
 	<separator/>
-	<menu id="utilities"/>
+	<menu id="commonUtilities"/>
 	<menu id="diskUtilities"/>
 	<menu id="networkUtilities"/>
 	<menu id="screenshot"/>
