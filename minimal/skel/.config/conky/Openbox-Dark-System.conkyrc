@@ -34,22 +34,4 @@ Swap${goto 60}${swap}${alignr}${swapmax}
 
 CPU:${goto 60}Used${alignr}GHz
 Avg${goto 60}${cpu cpu0}%${alignr}${freq_g}
-
-${alignc}S H O R T C U T    K E Y S
-${hr}
-[PrtSc]${alignr}Screenshot
-[Super]${alignr}Launcher
-[Ctrl] + Space${alignr}Launcher
-[Super] + Space${alignr}Root Menu
-[Alt] + Space${alignr}Window Menu
-[Super] + [Enter]${alignr}Terminal
-[Super] + e${alignr}Text Editor
-[Super] + f${alignr}File Manager
-[Super] + m${alignr}Music Player
-[Super] + w${alignr}Web Browser
-[Super] + v${alignr}Audio Control
-[Super] + s${alignr}Window Switcher
-[Ctrl] + [Shift] + [Enter]${alignr}Reload Configs
-[Ctrl] + [Alt] + l${alignr}Lock
-[Ctrl] + [Alt] + [Delete]${alignr}Logout
 ]];

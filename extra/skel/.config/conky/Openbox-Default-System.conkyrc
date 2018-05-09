@@ -1,9 +1,9 @@
 conky.config = {
 	alignment = 'top_right',
 	background = true,
-	color2 = 'e0e2e3',
+	color2 = '0f6957',
 	cpu_avg_samples = 2,
-	default_color = 'e0e2e3',
+	default_color = '0f6957',
 	double_buffer = true,
 	font = 'DejaVu Sans Mono Boot:size=10',
 	draw_shades = false,
