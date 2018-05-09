@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 <openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
   <resistance>
     <strength>10</strength>
@@ -19,7 +18,7 @@
     <primaryMonitor>Mouse</primaryMonitor>
   </placement>
   <theme>
-    <name>Day</name>
+    <name>Fog-mine</name>
     <titleLayout>NLIMC</titleLayout>
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
@@ -120,30 +119,90 @@
         <to>4</to>
       </action>
     </keybind>
-    <keybind key="S-W-1">
+    <keybind key="W-5">
+      <action name="GoToDesktop">
+        <to>5</to>
+      </action>
+    </keybind>
+    <keybind key="W-6">
+      <action name="GoToDesktop">
+        <to>6</to>
+      </action>
+    </keybind>
+    <keybind key="W-7">
+      <action name="GoToDesktop">
+        <to>7</to>
+      </action>
+    </keybind>
+    <keybind key="W-8">
+      <action name="GoToDesktop">
+        <to>8</to>
+      </action>
+    </keybind>
+    <keybind key="W-9">
+      <action name="GoToDesktop">
+        <to>9</to>
+      </action>
+    </keybind>
+    <keybind key="W-0">
+      <action name="GoToDesktop">
+        <to>10</to>
+      </action>
+    </keybind>
+    <keybind key="C-W-1">
       <action name="SendToDesktop">
         <desktop>1</desktop>
       </action>
     </keybind>
-    <keybind key="S-W-2">
+    <keybind key="C-W-2">
       <action name="SendToDesktop">
         <desktop>2</desktop>
       </action>
     </keybind>
-    <keybind key="S-W-3">
+    <keybind key="C-W-3">
       <action name="SendToDesktop">
         <desktop>3</desktop>
       </action>
     </keybind>
-    <keybind key="S-W-4">
+    <keybind key="C-W-4">
       <action name="SendToDesktop">
         <desktop>4</desktop>
       </action>
     </keybind>
+    <keybind key="C-W-5">
+      <action name="SendToDesktop">
+        <desktop>5</desktop>
+      </action>
+    </keybind>
+    <keybind key="C-W-6">
+      <action name="SendToDesktop">
+        <desktop>6</desktop>
+      </action>
+    </keybind>
+    <keybind key="C-W-7">
+      <action name="SendToDesktop">
+        <desktop>7</desktop>
+      </action>
+    </keybind>
+    <keybind key="C-W-8">
+      <action name="SendToDesktop">
+        <desktop>8</desktop>
+      </action>
+    </keybind>
+    <keybind key="C-W-9">
+      <action name="SendToDesktop">
+        <desktop>9</desktop>
+      </action>
+    </keybind>
+    <keybind key="C-W-0">
+      <action name="SendToDesktop">
+        <desktop>10</desktop>
+      </action>
+    </keybind>
     <keybind key="A-Tab">
       <action name="NextWindow">
-        <allDesktops>yes</allDesktops>
         <raise>yes</raise>
+        <allDesktops>yes</allDesktops>
         <finalactions>
           <action name="Focus"/>
           <action name="UnshadeRaise"/>
@@ -155,14 +214,19 @@
         <allDesktops>yes</allDesktops>
         <finalactions>
           <action name="SendToDesktop">
-            <to>current</to>
+            <desktop>1</desktop>
           </action>
           <action name="focus"/>
           <action name="raise"/>
         </finalactions>
       </action>
     </keybind>
-    <!-- Window Tiling: Snap feature -->
+    <keybind key="C-A-Right">
+      <action name="DesktopNext"/>
+    </keybind>
+    <keybind key="C-A-Left">
+      <action name="DesktopPrevious"/>
+    </keybind>
     <keybind key="W-Left">
       <action name="UnmaximizeFull"/>
       <action name="MaximizeVert"/>
@@ -179,7 +243,7 @@
       </action>
       <action name="MoveToEdgeEast"/>
     </keybind>
-    <keybind key="W-F">
+    <keybind key="C-W-f">
       <action name="MaximizeFull"/>
     </keybind>
     <keybind key="W-S-F">
@@ -190,8 +254,8 @@
       <action name="MoveResizeTo">
         <x>-15</x>
         <y>15</y>
-        <height>96%</height>
         <width>47%</width>
+        <height>96%</height>
       </action>
     </keybind>
     <keybind key="W-S-j">
@@ -199,11 +263,10 @@
       <action name="MoveResizeTo">
         <x>15</x>
         <y>15</y>
-        <height>96%</height>
         <width>47%</width>
+        <height>96%</height>
       </action>
     </keybind>
-    <!-- Top right-->
     <keybind key="W-k">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
@@ -211,7 +274,6 @@
         <y>15</y>
       </action>
     </keybind>
-    <!-- Top left-->
     <keybind key="W-h">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
@@ -219,7 +281,6 @@
         <y>15</y>
       </action>
     </keybind>
-    <!-- Bottom left-->
     <keybind key="W-j">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
@@ -227,7 +288,6 @@
         <y>-15</y>
       </action>
     </keybind>
-    <!-- Bottom right-->
     <keybind key="W-l">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
@@ -240,8 +300,8 @@
       <action name="MoveResizeTo">
         <x>15</x>
         <y>15</y>
-        <height>97%</height>
         <width>32%</width>
+        <height>97%</height>
       </action>
     </keybind>
     <keybind key="W-x">
@@ -249,8 +309,8 @@
       <action name="MoveResizeTo">
         <x>34%</x>
         <y>15</y>
-        <height>97%</height>
         <width>32%</width>
+        <height>97%</height>
       </action>
     </keybind>
     <keybind key="W-c">
@@ -258,36 +318,30 @@
       <action name="MoveResizeTo">
         <x>-17</x>
         <y>15</y>
-        <height>97%</height>
         <width>32%</width>
+        <height>97%</height>
       </action>
     </keybind>
-    <!-- Move -->
     <keybind key="W-Right">
       <action name="MoveRelative">
         <x>20</x>
-        <y>0</y>
       </action>
     </keybind>
     <keybind key="W-Left">
       <action name="MoveRelative">
         <x>-20</x>
-        <y>0</y>
       </action>
     </keybind>
     <keybind key="W-Up">
       <action name="MoveRelative">
-        <x>0</x>
         <y>-20</y>
       </action>
     </keybind>
     <keybind key="W-Down">
       <action name="MoveRelative">
-        <x>0</x>
         <y>20</y>
       </action>
     </keybind>
-    <!-- Resize -->
     <keybind key="W-S-Right">
       <action name="ResizeRelative">
         <right>20</right>
@@ -372,32 +426,37 @@
     </keybind>
     <keybind key="Print">
       <action name="Execute">
-        <command>scrot '%Y%m%d-%H%M%S_$wx$h_screenshot.png' -e 'mv $f $$(xdg-user-dir PICTURES) ; gpicview $$(xdg-user-dir PICTURES)/$f'</command>
+        <command>scrot 'screenshot_%Y%m%d-%H%M%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES) ; gpicview $$(xdg-user-dir PICTURES)/$f'</command>
       </action>
     </keybind>
     <keybind key="A-Print">
       <action name="Execute">
-        <command>scrot -d 5 '%Y%m%d-%H%M%S_$wx$h_screenshot.png' -e 'mv $f $$(xdg-user-dir PICTURES) ; gpicview $$(xdg-user-dir PICTURES)/$f'</command>
+        <command>scrot -d 5 'screenshot_%Y%m%d-%H%M%S_$wx$h.png' -e 'mv $f $$(xdg-user-dir PICTURES) ; gpicview $$(xdg-user-dir PICTURES)/$f'</command>
       </action>
     </keybind>
     <keybind key="W-f">
       <action name="Execute">
-        <command>pcmanfm</command>
+        <command>exo-open --launch FileManager</command>
       </action>
     </keybind>
     <keybind key="W-t">
       <action name="Execute">
-        <command>termite</command>
+        <command>exo-open --launch TerminalEmulator</command>
       </action>
     </keybind>
     <keybind key="W-w">
       <action name="Execute">
-        <command>basilisk</command>
+        <command>exo-open --launch WebBrowser</command>
       </action>
     </keybind>
     <keybind key="W-e">
       <action name="Execute">
         <command>subl3</command>
+      </action>
+    </keybind>
+    <keybind key="C-A-m">
+      <action name="Execute">
+        <command>xfce4-settings-manager</command>
       </action>
     </keybind>
     <keybind key="W-m">
@@ -417,7 +476,7 @@
     </keybind>
     <keybind key="W-Return">
       <action name="Execute">
-        <command>termite</command>
+        <command>exo-open --launch TerminalEmulator</command>
       </action>
     </keybind>
     <keybind key="A-F1">
@@ -881,5 +940,3 @@
     </application>
   </applications>
 </openbox_config>
-<!-- vim:sw=2
--->
