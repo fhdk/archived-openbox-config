@@ -26,17 +26,17 @@
 <menu id="diskUtilities" label="Disk Utilities">
 	<item label="Testdisk">
 		<action name="Execute">
-			<command>termite -e "zensu testdisk"</command>
+			<command>termite -e "sudo testdisk"</command>
 		</action>
 	</item>
 	<item label="Clonezilla">
 		<action name="Execute">
-			<command>termite -e "zensu clonezilla"</command>
+			<command>termite -e "sudo clonezilla"</command>
 		</action>
 	</item>
-	<item label="FS archiver">
+	<item label="Gparted">
 		<action name="Execute">
-			<command>termite -e "fsarchiver -h"</command>
+			<command>zensu gparted</command>
 		</action>
 	</item>
 </menu>
@@ -144,7 +144,7 @@
 <menu id="system-settings" label="System Settings">
 	<item label="Add/Remove Software ">
 		<action name="Execute">
-			<command>pacui</command>
+			<command>termite -e pacui</command>
 		</action>
 	</item>
 	<item label="Screen Layout">
@@ -163,7 +163,7 @@
 	</item>
 	<item label="File Manager">
 		<action name="Execute">
-			<command>pcmanfm</command>
+			<command>thunar</command>
 		</action>
 	</item>
 	<item label="Web Browser">

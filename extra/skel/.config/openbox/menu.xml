@@ -32,24 +32,24 @@
 <menu id="diskUtilities" label="Disk Utilities">
 	<item label="Testdisk">
 		<action name="Execute">
-			<command>termite -e "zensu testdisk"</command>
+			<command>termite -e "sudo testdisk"</command>
 		</action>
 	</item>
 	<item label="Clonezilla">
 		<action name="Execute">
-			<command>termite -e "zensu clonezilla"</command>
+			<command>termite -e "sudo clonezilla"</command>
 		</action>
 	</item>
-	<item label="FS archiver">
+	<item label="Gparted">
 		<action name="Execute">
-			<command>termite -e "fsarchiver -h"</command>
+			<command>zensu gparted</command>
 		</action>
 	</item>
 </menu>
 <menu id="networkUtilities" label="Network Utilities">
 	<item label="Zen Map">
 		<action name="Execute">
-			<command>zensu zenmap"</command>
+			<command>zensu zenmap</command>
 		</action>
 	</item>
 </menu>
@@ -77,7 +77,7 @@
 </menu>
 <menu id="preferences" label="Preferences">
 	<menu id="obConfig" label="Openbox">
-		<item label="Appearance Configuration">
+		<item label="LX Appearance">
 			<action name="Execute">
 				<command>lxappearance</command>
 			</action>
@@ -155,7 +155,7 @@
 	</item>
 	<item label="Pacui">
 		<action name="Execute">
-			<command>pacui</command>
+			<command>termite -e pacui</command>
 		</action>
 	</item>
 	<item label="Root File Manager">
@@ -171,11 +171,6 @@
 	<item label="Screen Layout">
 		<action name="Execute">
 			<command>arandr</command>
-		</action>
-	</item>
-	<item label="GParted">
-		<action name="Execute">
-			<command>zensu gparted</command>
 		</action>
 	</item>
 	<item label="Preferred Applications">

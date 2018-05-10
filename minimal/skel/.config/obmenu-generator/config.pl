@@ -73,7 +73,7 @@
 =cut
 
 our $CONFIG = {
-    "editor" => "exo-open",
+    "editor" => "subl3",
     "Linux::DesktopFiles" => {
         desktop_files_paths => [
             "/usr/share/applications",

@@ -73,7 +73,7 @@
 =cut
 
 our $CONFIG = {
-    "editor" => "exo-open",
+    "editor" => "subl3",
     "Linux::DesktopFiles" => {
         desktop_files_paths => [
             "/usr/share/applications",
@@ -97,6 +97,6 @@ our $CONFIG = {
     },
     "missing_icon" => "gtk-missing-image",
     "name_keys" => ["Name"],
-    "terminal" => "exo-open --launch TerminalEmulator",
+    "terminal" => "termite",
     "VERSION" => 0.84,
 }
