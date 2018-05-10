@@ -43,7 +43,7 @@
 <menu id="networkUtilities" label="Network Utilities">
 	<item label="Zen Map">
 		<action name="Execute">
-			<command>zensu zenmap"</command>
+			<command>zensu zenmap</command>
 		</action>
 	</item>
 </menu>

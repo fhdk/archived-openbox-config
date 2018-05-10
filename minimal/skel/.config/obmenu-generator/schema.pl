@@ -26,8 +26,8 @@ our $SCHEMA = [
     # Format:  NAME, LABEL, ICON
     {sep => "Manjaro Openbox"},
     {item => ['termite', 'Terminal', 'terminal']},
-    {item => ['falcon', 'Web Browser', 'falcon']},
-    {item => ['pcmanfm', 'File Manager', 'file-manager']},
+    {item => ['basilisk', 'Web Browser', 'basilisk']},
+    {item => ['thunar', 'File Manager', 'file-manager']},
     {sep => undef},
     {cat => ['utility', 'Accessories', 'applications-utilities']},
     {cat => ['development', 'Development', 'applications-development']},
