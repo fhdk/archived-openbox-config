@@ -39,6 +39,11 @@
 			<command>zensu gparted</command>
 		</action>
 	</item>
+    <item label="USB Image Writer">
+        <action name="Execute">
+            <command>mintstick</command>
+        </action>
+    </item>
 </menu>
 <menu id="networkUtilities" label="Network Utilities">
 	<item label="Zen Map">
