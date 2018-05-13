@@ -21,15 +21,16 @@ require "$ENV{HOME}/.config/obmenu-generator/config.pl";
 
 ## Text editor
 my $editor = $CONFIG->{editor};
+my $terminal = $CONFIG->{terminal}
 
 our $SCHEMA = [
     # Format:  NAME, LABEL, ICON
     {sep => "Manjaro Openbox"},
-    {item => ['termite', 'Terminal', 'terminal']},
+    {item => ["$terminal", 'Terminal', 'terminal']},
     {item => ['basilisk', 'Web Browser', 'basilisk']},
     {item => ['thunar', 'File Manager', 'file-manager']},
     {item => ['claws-mail', 'Mail Reader', 'claws-mail']},
-    {item => ['gedit', 'Text Editor', 'org.gnome.edit']},
+    {item => ["$editor", 'Text Editor', 'gedit']},
     {sep => undef},
     {cat => ['utility', 'Accessories', 'applications-utilities']},
     {cat => ['development', 'Development', 'applications-development']},
@@ -53,9 +54,9 @@ our $SCHEMA = [
         {item => ['obkey', 'Keybind Editor', 'openbox']},
         {item => ['ob-autostart', 'Autostart Editor', 'openbox']},
         {sep => undef},
-        {item => ["gedit ~/.config/openbox/menu.xml", 'Edit menu.xml', 'text-xml']},
-        {item => ["gedit ~/.config/openbox/rc.xml", 'Edit rc.xml', 'text-xml']},
-        {item => ["gedit ~/.config/openbox/autostart", 'Edit autostart', 'text-xml']},
+        {item => ["$editor ~/.config/openbox/menu.xml", 'Edit menu.xml', 'text-xml']},
+        {item => ["$editor ~/.config/openbox/rc.xml", 'Edit rc.xml', 'text-xml']},
+        {item => ["$editor ~/.config/openbox/autostart", 'Edit autostart', 'text-xml']},
         {sep => undef},
         {item => ['openbox --restart', 'Openbox Restart', 'openbox']},
         {item => ['openbox --reconfigure', 'Openbox Reconfigure', 'openbox']},
@@ -80,7 +81,7 @@ our $SCHEMA = [
       {item => ['obmenu-generator -p', 'Generate a pipe menu', 'menu-editor']},
       {item => ['obmenu-generator -s -c', 'Generate a static menu', 'menu-editor']},
     {end_cat => undef},
-    {item => ["switchmenu --static", 'Switch Menu', 'menu-editor']},
+    {item => ['switchmenu --static', 'Switch Menu', 'menu-editor']},
     {pipe => ['manjaro-kb-pipemenu', 'Display Keybinds', 'cs-keyboard']},
     {pipe => ['manjaro-help-pipemenu', 'Help and Info', 'info']},
     {sep => undef},

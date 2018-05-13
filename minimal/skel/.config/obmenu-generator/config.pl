@@ -73,7 +73,7 @@
 =cut
 
 our $CONFIG = {
-    "editor" => "subl3",
+    "editor" => "gedit",
     "Linux::DesktopFiles" => {
         desktop_files_paths => [
             "/usr/share/applications",
