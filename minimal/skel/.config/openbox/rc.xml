@@ -451,7 +451,7 @@
     </keybind>
     <keybind key="W-e">
       <action name="Execute">
-        <command>subl3</command>
+        <command>gedit</command>
       </action>
     </keybind>
     <keybind key="C-A-m">

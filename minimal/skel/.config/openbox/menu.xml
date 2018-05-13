@@ -183,7 +183,7 @@
 	</item>
     <item label="Text Editor">
         <action name="Execute">
-            <command>subl3</command>
+            <command>gedit</command>
         </action>
     </item>
 	<item label="Web Browser">
