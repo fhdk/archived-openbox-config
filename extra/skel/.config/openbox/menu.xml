@@ -4,7 +4,7 @@
 <menu id="common-utilities" label="Utilities">
     <item label="Archive Manager">
         <action name="Execute">
-            <command>xarchiver</command>
+            <command>file-roller</command>
         </action>
     </item>
 	<item label="Calculator">
@@ -81,19 +81,14 @@
 </menu>
 <menu id="preferences" label="Preferences">
 	<menu id="obConfig" label="Openbox">
-		<item label="Autostart Editor">
-			<action name="Execute">
-				<command>ob-autostart</command>
-			</action>
-		</item>
-		<item label="Keybind Editor">
-			<action name="Execute">
-				<command>obkey</command>
-			</action>
-		</item>
 		<item label="LX Appearance">
 			<action name="Execute">
 				<command>lxappearance</command>
+			</action>
+		</item>
+		<item label="Openbox Configuration">
+			<action name="Execute">
+				<command>obconf</command>
 			</action>
 		</item>
 		<item label="Menu Editor">
@@ -101,9 +96,14 @@
 				<command>kickshaw</command>
 			</action>
 		</item>
-		<item label="Openbox Configuration">
+		<item label="Keybind Editor">
 			<action name="Execute">
-				<command>obconf</command>
+				<command>obkey</command>
+			</action>
+		</item>
+		<item label="Autostart Editor">
+			<action name="Execute">
+				<command>ob-autostart</command>
 			</action>
 		</item>
 		<separator label="Config Files"/>

@@ -4,7 +4,7 @@
 <menu id="common-utilities" label="Common Utilities">
     <item label="Archive Manager">
         <action name="Execute">
-            <command>xarchiver</command>
+            <command>file-roller</command>
         </action>
     </item>
 	<item label="Calculator">
@@ -76,14 +76,14 @@
 </menu>
 <menu id="preferences" label="Preferences">
 	<menu id="obConfig" label="Openbox">
-        <item label="Autostart Editor">
+        <item label="LX Appearance">
             <action name="Execute">
-                <command>ob-autostart</command>
+                <command>lxappearance</command>
             </action>
         </item>
-        <item label="Keybind Editor">
+        <item label="Openbox Configuration">
             <action name="Execute">
-                <command>obkey</command>
+                <command>obconf</command>
             </action>
         </item>
         <item label="Menu Editor">
@@ -91,12 +91,17 @@
                 <command>kickshaw</command>
             </action>
         </item>
-		<item label="Openbox Configuration">
-			<action name="Execute">
-				<command>obconf</command>
-			</action>
-		</item>
-		<separator label="Config Files"/>
+        <item label="Keybind Editor">
+            <action name="Execute">
+                <command>obkey</command>
+            </action>
+        </item>
+        <item label="Autostart Editor">
+            <action name="Execute">
+                <command>ob-autostart</command>
+            </action>
+        </item>
+		<separator />
 		<item label="Edit autostart">
 			<action name="Execute">
 				<command>xdg-open ~/.config/openbox/autostart</command>
@@ -112,7 +117,7 @@
 				<command>xdg-open ~/.config/openbox/rc.xml</command>
 			</action>
 		</item>
-		<separator label="Reload Configuration"/>
+		<separator/>
 		<item label="Openbox Reconfigure">
 			<action name="Reconfigure"/>
 		</item>
@@ -188,7 +193,7 @@
     </item>
 	<item label="Web Browser">
 		<action name="Execute">
-			<command>basilisk</command>
+			<command>chromium</command>
 		</action>
 	</item>
 	<separator/>
