@@ -76,9 +76,9 @@
 </menu>
 <menu id="preferences" label="Preferences">
 	<menu id="obConfig" label="Openbox">
-        <item label="LX Appearance">
+        <item label="Appearance">
             <action name="Execute">
-                <command>lxappearance</command>
+                <command>xfce4-appearance-settings</command>
             </action>
         </item>
         <item label="Openbox Configuration">
@@ -94,6 +94,11 @@
         <item label="Keybind Editor">
             <action name="Execute">
                 <command>obkey</command>
+            </action>
+        </item>
+        <item label="Screen Layout">
+            <action name="Execute">
+                <command>arandr</command>
             </action>
         </item>
         <item label="Autostart Editor">
@@ -152,21 +157,16 @@
 			<command>termite --geometry=550x250 -e pacui</command>
 		</action>
 	</item>
-    <item label="Manjaro Settings Manager">
-        <action name="Execute">
-            <command>manjaro-settings-manager</command>
-        </action>
-    </item>
     <item label="Root File Manager">
         <action name="Execute">
             <command>zensu thunar</command>
         </action>
     </item>
-	<item label="Screen Layout">
-		<action name="Execute">
-			<command>arandr</command>
-		</action>
-	</item>
+    <item label="Settings Manager">
+        <action name="Execute">
+            <command>xfce4-settings-manager</command>
+        </action>
+    </item>
 </menu>
 
 <menu id="root-menu" label="Openbox 3">
