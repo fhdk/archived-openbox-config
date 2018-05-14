@@ -28,7 +28,7 @@
 		</action>
 	</item>
 </menu>
-<menu id="disk-utilities" label="Disk Utilities">
+<menu id="disk-utilities" label="Disk Tools ">
 	<item label="Clonezilla">
 		<action name="Execute">
 			<command>termite -e "sudo clonezilla"</command>
@@ -50,7 +50,7 @@
         </action>
     </item>
 </menu>
-<menu id="network-utilities" label="Network Utilities">
+<menu id="network-utilities" label="Net Tools">
     <item label="Angry IP Scanner">
         <action name="Execute">
             <command>ipscan</command>

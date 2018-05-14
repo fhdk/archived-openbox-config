@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <openbox_menu>
-<menu id="common-utilities" label="Common Utilities">
+<menu id="common-utilities" label="Utilities">
     <item label="Archive Manager">
         <action name="Execute">
             <command>file-roller</command>
@@ -23,7 +23,7 @@
 		</action>
 	</item>
 </menu>
-<menu id="disk-utilities" label="Disk Utilities">
+<menu id="disk-utilities" label="Disk Tools">
 	<item label="Clonezilla">
 		<action name="Execute">
 			<command>termite -e "sudo clonezilla"</command>
@@ -45,7 +45,7 @@
         </action>
     </item>
 </menu>
-<menu id="network-utilities" label="Network Utilities">
+<menu id="network-utilities" label="Net Tools">
     <item label="Angry IP Scanner">
         <action name="Execute">
             <command>ipscan</command>
