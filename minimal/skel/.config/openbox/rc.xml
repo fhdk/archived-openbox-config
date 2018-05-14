@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
   <resistance>
     <strength>10</strength>
@@ -18,7 +19,7 @@
     <primaryMonitor>Mouse</primaryMonitor>
   </placement>
   <theme>
-    <name>Fog-mine</name>
+    <name>Adapta-Nokto-Maia</name>
     <titleLayout>NLIMC</titleLayout>
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
@@ -451,7 +452,7 @@
     </keybind>
     <keybind key="W-e">
       <action name="Execute">
-        <command>gedit</command>
+        <command>subl3</command>
       </action>
     </keybind>
     <keybind key="C-A-m">
