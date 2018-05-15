@@ -25,10 +25,10 @@ my $editor = $CONFIG->{editor};
 our $SCHEMA = [
     # Format:  NAME, LABEL, ICON
     {sep => "Manjaro Openbox"},
-    {item => ['exo-open --launch TerminalEmulator', 'Terminal', 'terminal']},
-    {item => ['exo-open --launch WebBrowser ', 'Web Browser', 'firefox']},
+    {item => ['exo-open --launch TerminalEmulator', 'Terminal', 'terminal-emulator']},
+    {item => ['exo-open --launch WebBrowser ', 'Web Browser', 'web-browser']},
     {item => ['exo-open --launch FileManager', 'File Manager', 'file-manager']},
-    {item => ['exo-open --launch MailReader', 'Mail Reader', 'sylpheed']},
+    {item => ['exo-open --launch MailReader', 'Mail Reader', 'mail-reader']},
     {item => ["$editor", 'Text Editor', 'gedit']},
     {sep => undef},
     {cat => ['utility', 'Accessories', 'applications-utilities']},

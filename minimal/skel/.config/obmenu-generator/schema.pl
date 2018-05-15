@@ -21,15 +21,15 @@ require "$ENV{HOME}/.config/obmenu-generator/config.pl";
 
 ## Text editor
 my $editor = $CONFIG->{editor};
-my $terminal = $CONFIG->{terminal}
+my $terminal = $CONFIG->{terminal};
 
 our $SCHEMA = [
     # Format:  NAME, LABEL, ICON
     {sep => "Manjaro Openbox"},
     {item => ["$terminal", 'Terminal', 'terminal']},
-    {item => ['basilisk', 'Web Browser', 'basilisk']},
+    {item => ['chromium', 'Web Browser', 'chromium']},
     {item => ['thunar', 'File Manager', 'file-manager']},
-    {item => ['claws-mail', 'Mail Reader', 'claws-mail']},
+    {item => ['sylpheed', 'Mail Reader', 'sylpheed']},
     {item => ["$editor", 'Text Editor', 'gedit']},
     {sep => undef},
     {cat => ['utility', 'Accessories', 'applications-utilities']},
