@@ -7,7 +7,7 @@ sleep 1; manjaro-compositor --start &
 # restore wallpaper
 sleep 1; nitrogen --restore &
 sleep 1; polybar -c ~/.config/polybar/config openbox-bar &
-sleep 1; manjaro-tint-session &
+sleep 1; tint2 -c ~/.config/tint2/tint2rc &
 manjaro-conky-session &
 
 # Openbox autostart
