@@ -5,8 +5,9 @@ sleep 1; manjaro-compositor --start &
 #sleep 0.5; numlockx &
 
 # restore wallpaper
-sleep 0.5; nitrogen --restore &
-sleep 0.5; polybar -c ~/.config/polybar/config openbox-bar &
+sleep 1; nitrogen --restore &
+sleep 1; polybar -c ~/.config/polybar/config openbox-bar &
+sleep 1; manjaro-tint-session &
 manjaro-conky-session &
 
 # Openbox autostart
