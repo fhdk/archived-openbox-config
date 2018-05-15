@@ -48,7 +48,7 @@
     </item>
     <item label="USB Image Writer">
         <action name="Execute">
-            <command>mintstick</command>
+            <command>mintstick -m iso</command>
         </action>
     </item>
 </menu>
@@ -221,8 +221,6 @@
 	</item>
 	<separator/>
 	<menu id="common-utilities"/>
-	<menu id="disk-utilities"/>
-	<menu id="network-utilities"/>
 	<menu id="screenshot"/>
 	<menu id="applications" label="Applications" execute="/usr/bin/obmenu-generator -S ~/.config/obmenu-generator/applications.pl"/>
 	<separator/>

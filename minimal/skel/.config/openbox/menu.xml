@@ -43,7 +43,7 @@
     </item>
     <item label="USB Image Writer">
         <action name="Execute">
-            <command>mintstick</command>
+            <command>mintstick -m iso</command>
         </action>
     </item>
 </menu>
@@ -154,7 +154,7 @@
 </menu>
 
 <menu id="preferences" label="Preferences">
-    <menu id="obConfg"/>
+    <menu id="obConfig"/>
     <menu id="system-settings"/>
 	<menu id="CompositingPipeMenu" label="Compositor" execute="manjaro-compositor"/>
 	<menu id="PolybarPipeMenu" label="Polybar" execute="manjaro-polybar-pipemenu"/>
