@@ -1,4 +1,4 @@
-Web browser,firefox,firefox
+Web browser,chromium,chromium
 File manager,thunar,system-file-manager
 Terminal,termite,utilities-terminal
 ^sep()
