@@ -21,7 +21,7 @@ menu_border          = 1
 menu_halign          = left
 menu_valign          = top
 
-#sub_spacing         = 1
+sub_spacing         = 5
 #sub_padding_top     = -1
 #sub_padding_right   = -1
 #sub_padding_bottom  = -1
@@ -38,7 +38,7 @@ item_border          = 0
 
 sep_height           = 5
 
-font                 = Ubuntu 12px
+font                 = Roboto 12px
 #font_fallback       = xtg
 icon_size            = 24
 #icon_text_spacing   = 10
@@ -48,16 +48,16 @@ icon_size            = 24
 #arrow_string        = ▸
 #arrow_width         = 15
 
-color_menu_bg        = #B2A7A1 100
+color_menu_bg        = #e0e2e3 100
 color_menu_fg        = #2b303b 100
-#color_menu_border   = #B2A7A1 8
+#color_menu_border   = #e0e2e3 8
 
-color_norm_bg        = #B2A7A1 0
+color_norm_bg        = #e0e2e3 0
 color_norm_fg        = #2b303b 100
 
 color_sel_bg         = #8fa1b3 60
 color_sel_fg         = #2b303b 100
-#color_sel_border    = #B2A7A1 8
+#color_sel_border    = #e0e2e3 8
 
 color_sep_fg         = #8fa1b3 40
 

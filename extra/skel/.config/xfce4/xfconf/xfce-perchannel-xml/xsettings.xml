@@ -2,8 +2,8 @@
 
 <channel name="xsettings" version="1.0">
   <property name="Net" type="empty">
-    <property name="ThemeName" type="string" value="Adapta-Nokto-Maia"/>
-    <property name="IconThemeName" type="string" value="Papirus-Dark-Maia"/>
+    <property name="ThemeName" type="string" value="Adapta-Maia"/>
+    <property name="IconThemeName" type="string" value="Papirus-Maia"/>
     <property name="DoubleClickTime" type="empty"/>
     <property name="DoubleClickDistance" type="empty"/>
     <property name="DndDragThreshold" type="empty"/>
