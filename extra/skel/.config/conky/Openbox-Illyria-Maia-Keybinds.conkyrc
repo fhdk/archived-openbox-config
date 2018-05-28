@@ -21,8 +21,11 @@ conky.text = [[
 ${alignc}${font :size=24}SHORTCUT KEYS${font}
 ${hr}
 [PrtSc]${alignr}Screenshot
-[Super]${alignr}Launcher
-[Super] + Space${alignr}Root Menu
+[Super]${alignr}JG Menu
+[Alt] + F1${alignr}JG Menu
+[Ctrl] + Space${alignr}Rofi Launcher
+[Alt] + F2${alignr}Rofi Launcher
+[Super] + Space${alignr}Openbox Menu
 [Alt] + Space${alignr}Window Menu
 [Super] + [Enter]${alignr}Terminal
 [Super] + e${alignr}Text Editor

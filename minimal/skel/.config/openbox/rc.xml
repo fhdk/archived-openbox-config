@@ -482,6 +482,11 @@
     </keybind>
     <keybind key="A-F1">
       <action name="Execute">
+        <command>jgmenu_run</command>
+      </action>
+    </keybind>
+    <keybind key="A-F2">
+      <action name="Execute">
         <command>rofr.sh -r</command>
       </action>
     </keybind>
