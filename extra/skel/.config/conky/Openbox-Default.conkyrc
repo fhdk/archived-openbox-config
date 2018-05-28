@@ -40,9 +40,11 @@ Avg${goto 60}${cpu cpu0}%${alignr}${freq_g}
 ${alignc}S H O R T C U T    K E Y S
 ${hr}
 [PrtSc]${alignr}Screenshot
-[Super]${alignr}Launcher
-[Ctrl] + Space${alignr}Launcher
-[Super] + Space${alignr}Root Menu
+[Super]${alignr}JG Menu
+[Alt] + F1${alignr}JG Menu
+[Ctrl] + Space${alignr}Rofi Launcher
+[Alt] + F2${alignr}Rofi Launcher
+[Super] + Space${alignr}Openbox Menu
 [Alt] + Space${alignr}Window Menu
 [Super] + [Enter]${alignr}Terminal
 [Super] + e${alignr}Text Editor
