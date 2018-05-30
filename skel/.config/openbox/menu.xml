@@ -89,7 +89,10 @@
             <action name="Restart"/>
         </item>
     </menu>
-
+    <menu id="PolybarPipeMenu" label="Polybar" execute="manjaro-polybar-pipemenu"/>
+    <menu id="ConkyPipeMenu" label="Conky" execute="manjaro-conky-pipemenu"/>
+    <menu id="TintPipeMenu" label="Tint2" execute="manjaro-tint2-pipemenu"/>
+    <menu id="CompositingPipeMenu" label="Compositor" execute="manjaro-compositor"/>
     <menu id="system-settings" label="System">
         <item label="Appearance">
             <action name="Execute">
@@ -122,10 +125,6 @@
             </action>
         </item>
     </menu>
-    <menu id="CompositingPipeMenu" label="Compositor" execute="manjaro-compositor"/>
-    <menu id="PolybarPipeMenu" label="Polybar" execute="manjaro-polybar-pipemenu"/>
-    <menu id="ConkyPipeMenu" label="Conky" execute="manjaro-conky-pipemenu"/>
-    <menu id="TintPipeMenu" label="Tint2" execute="manjaro-tint2-pipemenu"/>
     <separator/>
     <item label="Panel Chooser">
         <action name="Execute">
