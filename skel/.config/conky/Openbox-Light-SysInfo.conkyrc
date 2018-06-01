@@ -1,26 +1,24 @@
 conky.config = {
-	alignment = 'bottom_left',
+	alignment = 'top_right',
 	background = true,
-	border_width = 0,
-	color2 = '16a085',
+	color2 = '000000',
 	cpu_avg_samples = 2,
-	default_color = '16a085',
+	default_color = '000000',
 	double_buffer = true,
 	font = 'DejaVu Sans Mono Boot:size=10',
-	draw_outline = false,
 	draw_shades = false,
 	gap_x = 25,
-	gap_y = 45,
+	gap_y = 50,
 	minimum_width = 250,
 	no_buffers = true,
 	own_window = true,
 	own_window_type = 'override',
 	own_window_transparent = true,
-	update_interval = 1.0,
+	update_interval = 2.0,
 	use_xft = true,
 }
 conky.text = [[
-${alignc}${alignc}${font :size=24}SYSTEM INFO${font}
+${alignc}${font :size=24}SYSTEM INFO${font}
 ${hr}
 Host:${alignr}${nodename}
 Uptime:${alignr}${uptime}

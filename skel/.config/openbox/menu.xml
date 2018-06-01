@@ -10,7 +10,7 @@
     </item>
     <item label="Disks">
         <action name="Execute">
-            <command>gksu-polkit gnome-disks</command>
+            <command>gksu gnome-disks</command>
         </action>
     </item>
     <item label="USB Image Writer">
@@ -122,7 +122,7 @@
         </item>
         <item label="Root File Manager">
             <action name="Execute">
-                <command>gksu-polkit thunar</command>
+                <command>gksu thunar</command>
             </action>
         </item>
     </menu>

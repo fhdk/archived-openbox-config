@@ -8,7 +8,7 @@ conky.config = {
 	font = 'DejaVu Sans Mono Boot:size=10',
 	draw_shades = false,
 	gap_x = 25,
-	gap_y = 45,
+	gap_y = 50,
 	minimum_width = 250,
 	no_buffers = true,
 	own_window = true,
