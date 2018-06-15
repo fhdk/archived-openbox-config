@@ -1,3 +1,5 @@
+lxsession &
+
 # compton
 sleep 1; manjaro-compositor --start &
 
