@@ -102,18 +102,6 @@
 
 <menu id="root-menu" label="Openbox 3">
 
-    <separator label="Install Manjaro Openbox"/>
-        <item label="Calamares Installer">
-        <action name="Execute">
-            <command>sudo calamares</command>
-        </action>
-    </item>
-    <item label="Architect Installer">
-        <action name="Execute">
-            <command>termite -e "sudo setup"</command>
-        </action>
-    </item>
-
     <separator label="Manjaro Openbox"/>
     <item label="Terminal">
         <action name="Execute">
