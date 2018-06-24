@@ -1,24 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <openbox_menu>
-<!-- Define Disk Tools Menu-->
-<menu id="disk-tools" label="Disk Tools">
-    <item label="Clonezilla">
-        <action name="Execute">
-            <command>termite -e "sudo clonezilla"</command>
-        </action>
-    </item>
-    <item label="Disks">
-        <action name="Execute">
-            <command>gksu gnome-disks</command>
-        </action>
-    </item>
-    <item label="USB Image Writer">
-        <action name="Execute">
-            <command>mintstick -m iso</command>
-        </action>
-    </item>
-</menu>
 <!-- Define Screenshot Menu -->
 <menu id="screenshot" label="Screenshot">
     <item label="Screenshot in 5">
@@ -41,7 +23,7 @@
 <menu id="preferences" label="Preferences">
 	<!-- Openbox Sub Menu -->
     <menu id="openbox-config" label="Openbox">
-        <item label="Configuration">
+        <item label="Openbox Configuration">
             <action name="Execute">
                 <command>obconf</command>
             </action>
@@ -95,6 +77,11 @@
     <menu id="CompositingPipeMenu" label="Compositor" execute="manjaro-compositor"/>
     <!-- System Sub Menu -->
     <menu id="system-settings" label="System">
+        <item label="LX Appearance">
+            <action name="Execute">
+                <command>lxappearance</command>
+            </action>
+        </item>
         <item label="Appearance">
             <action name="Execute">
                 <command>xfce4-appearance-settings</command>
@@ -148,17 +135,17 @@
     <separator label="Manjaro Openbox"/>
     <item label="Terminal">
         <action name="Execute">
-            <command>termite</command>
+            <command>exo-open --launch TerminalEmulator</command>
         </action>
     </item>
     <item label="File Manager">
         <action name="Execute">
-            <command>thunar</command>
+            <command>exo-open --launch FileManager</command>
         </action>
     </item>
     <item label="Web Browser">
         <action name="Execute">
-            <command>chromium</command>
+            <command>exo-open --launch WebBrowser</command>
         </action>
     </item>
     <separator/>

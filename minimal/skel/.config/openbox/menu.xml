@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <openbox_menu>
-
+<!-- Define Screenshot Menu -->
 <menu id="screenshot" label="Screenshot">
     <item label="Screenshot in 5">
         <action name="Execute">
@@ -19,20 +19,21 @@
         </action>
     </item>
 </menu>
-
+<!-- Define Preferences Menu -->
 <menu id="preferences" label="Preferences">
-    <menu id="openbox" label="Openbox">
-        <item label="Configuration">
+	<!-- Openbox Sub Menu -->
+    <menu id="openbox-config" label="Openbox">
+        <item label="Openbox Configuration">
             <action name="Execute">
                 <command>obconf</command>
             </action>
         </item>
-        <item label="Menu Editor">
+        <item label="GUI Menu Editor">
             <action name="Execute">
                 <command>kickshaw</command>
             </action>
         </item>
-        <item label="Keybind Editor">
+        <item label="GUI Keybind Editor">
             <action name="Execute">
                 <command>obkey</command>
             </action>
@@ -45,17 +46,17 @@
         <separator />
         <item label="Edit autostart">
             <action name="Execute">
-                <command>xdg-open ~/.config/openbox/autostart</command>
+                <command>exo-open ~/.config/openbox/autostart</command>
             </action>
         </item>
         <item label="Edit menu.xml">
             <action name="Execute">
-                <command>xdg-open ~/.config/openbox/menu.xml</command>
+                <command>exo-open ~/.config/openbox/menu.xml</command>
             </action>
         </item>
         <item label="Edit rc.xml">
             <action name="Execute">
-                <command>xdg-open ~/.config/openbox/rc.xml</command>
+                <command>exo-open ~/.config/openbox/rc.xml</command>
             </action>
         </item>
         <separator/>
@@ -66,11 +67,36 @@
             <action name="Restart"/>
         </item>
     </menu>
+    <!-- Polybar Sub Menu -->
     <menu id="PolybarPipeMenu" label="Polybar" execute="manjaro-polybar-pipemenu"/>
+    <!-- Conky Sub Menu -->
     <menu id="ConkyPipeMenu" label="Conky" execute="manjaro-conky-pipemenu"/>
+    <!-- Tint Sub Menu -->
     <menu id="TintPipeMenu" label="Tint2" execute="manjaro-tint2-pipemenu"/>
+    <!-- Compton Sub Menu -->
     <menu id="CompositingPipeMenu" label="Compositor" execute="manjaro-compositor"/>
+    <!-- System Sub Menu -->
     <menu id="system-settings" label="System">
+        <item label="LX Appearance">
+            <action name="Execute">
+                <command>lxappearance</command>
+            </action>
+        </item>
+        <item label="Appearance">
+            <action name="Execute">
+                <command>xfce4-appearance-settings</command>
+            </action>
+        </item>
+        <item label="Audio Settings">
+            <action name="Execute">
+                <command>pavucontrol</command>
+            </action>
+        </item>
+        <item label="Add/Remove Software">
+            <action name="Execute">
+                <command>pamac-manager</command>
+            </action>
+        </item>
         <item label="Screen Layout">
             <action name="Execute">
                 <command>arandr</command>
@@ -81,16 +107,21 @@
                 <command>gksu pcmanfm</command>
             </action>
         </item>
+        <item label="Settings Manager">
+            <action name="Execute">
+                <command>xfce4-settings-manager</command>
+            </action>
+        </item>
     </menu>
     <separator/>
-    <item label="Panel Chooser">
-        <action name="Execute">
-            <command>manjaro-panel-chooser</command>
-        </action>
-    </item>
     <item label="Wallpaper">
         <action name="Execute">
             <command>nitrogen</command>
+        </action>
+    </item>
+    <item label="Panel Chooser">
+        <action name="Execute">
+            <command>manjaro-panel-chooser</command>
         </action>
     </item>
     <item label="Rofi Theme">
@@ -99,7 +130,7 @@
         </action>
     </item>
 </menu>
-
+<!-- Root Menu starts here -->
 <menu id="root-menu" label="Openbox 3">
     <separator label="Manjaro Openbox"/>
     <item label="Terminal">
@@ -118,16 +149,22 @@
         </action>
     </item>
     <separator/>
+    <!-- Screenshot Sub Menu -->
     <menu id="screenshot"/>
+    <!-- Applications Sub Menu -->
     <menu id="applications" label="Applications" execute="/usr/bin/obmenu-generator -S ~/.config/obmenu-generator/applications.pl"/>
     <separator/>
+    <!-- Places Sub Menu -->
     <menu id="pipe-placesmenu" label="Places" execute="manjaro-places-pipemenu --recent ~/"/>
     <separator/>
+    <!-- Preferences Sub Menu -->
     <menu id="preferences"/>
+    <!-- Keybinds Sub Menu -->
     <menu id="keybinds" label="Keybinds" execute="manjaro-kb-pipemenu"/>
     <separator/>
+    <!-- Help Sub Menu -->
     <menu id="help" label="Help and Info" execute="manjaro-help-pipemenu"/>
-    <separator/>   
+    <separator/>
     <item label="Switch Menu">
         <action name="Execute">
             <command>switchmenu -dynamic</command>
@@ -145,5 +182,4 @@
         </action>
     </item>
 </menu>
-
 </openbox_menu>
