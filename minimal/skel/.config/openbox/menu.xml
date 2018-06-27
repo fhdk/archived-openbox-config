@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <openbox_menu>
-<!-- Define Screenshot Menu -->
+<menu id="disk-utilities" label="Disk Tools">
+    <item label="Clonezilla">
+        <action name="Execute">
+            <command>termite -e "sudo clonezilla"</command>
+        </action>
+    </item>
+    <item label="Gparted">
+        <action name="Execute">
+            <command>gksu gparted</command>
+        </action>
+    </item>
+    <item label="Testdisk">
+        <action name="Execute">
+            <command>termite -e "sudo testdisk"</command>
+        </action>
+    </item>
+</menu>
 <menu id="screenshot" label="Screenshot">
     <item label="Screenshot in 5">
         <action name="Execute">
@@ -19,9 +35,7 @@
         </action>
     </item>
 </menu>
-<!-- Define Preferences Menu -->
 <menu id="preferences" label="Preferences">
-	<!-- Openbox Sub Menu -->
     <menu id="openbox-config" label="Openbox">
         <item label="Openbox Configuration">
             <action name="Execute">
@@ -67,15 +81,10 @@
             <action name="Restart"/>
         </item>
     </menu>
-    <!-- Polybar Sub Menu -->
     <menu id="PolybarPipeMenu" label="Polybar" execute="manjaro-polybar-pipemenu"/>
-    <!-- Conky Sub Menu -->
     <menu id="ConkyPipeMenu" label="Conky" execute="manjaro-conky-pipemenu"/>
-    <!-- Tint Sub Menu -->
     <menu id="TintPipeMenu" label="Tint2" execute="manjaro-tint2-pipemenu"/>
-    <!-- Compton Sub Menu -->
     <menu id="CompositingPipeMenu" label="Compositor" execute="manjaro-compositor"/>
-    <!-- System Sub Menu -->
     <menu id="system-settings" label="System">
         <item label="LX Appearance">
             <action name="Execute">
@@ -149,20 +158,15 @@
         </action>
     </item>
     <separator/>
-    <!-- Screenshot Sub Menu -->
+    <menu id="disk-utilities"/>
     <menu id="screenshot"/>
-    <!-- Applications Sub Menu -->
     <menu id="applications" label="Applications" execute="/usr/bin/obmenu-generator -S ~/.config/obmenu-generator/applications.pl"/>
     <separator/>
-    <!-- Places Sub Menu -->
     <menu id="pipe-placesmenu" label="Places" execute="manjaro-places-pipemenu --recent ~/"/>
     <separator/>
-    <!-- Preferences Sub Menu -->
     <menu id="preferences"/>
-    <!-- Keybinds Sub Menu -->
     <menu id="keybinds" label="Keybinds" execute="manjaro-kb-pipemenu"/>
     <separator/>
-    <!-- Help Sub Menu -->
     <menu id="help" label="Help and Info" execute="manjaro-help-pipemenu"/>
     <separator/>
     <item label="Switch Menu">

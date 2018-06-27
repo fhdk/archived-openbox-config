@@ -35,7 +35,6 @@ ${hr}
 [Super] + w${alignr}Web Browser
 [Super] + v${alignr}Audio Control
 [Super] + s${alignr}Window Switcher
-[Ctrl] + [Shift] + [Enter]${alignr}Reload Configs
 [Ctrl] + [Alt] + L${alignr}Lock
 [Ctrl] + [Alt] + [Delete]${alignr}Logout
 ]];

@@ -1,7 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <openbox_menu>
-<!-- Define Screenshot Menu -->
+<menu id="disk-utilities" label="Disk Utilities">
+    <item label="Clonezilla">
+        <action name="Execute">
+            <command>termite -e "sudo clonezilla"</command>
+        </action>
+    </item>
+    <item label="Gparted">
+        <action name="Execute">
+            <command>gksu gparted</command>
+        </action>
+    </item>
+    <item label="Testdisk">
+        <action name="Execute">
+            <command>termite -e "sudo testdisk"</command>
+        </action>
+    </item>
+</menu>
 <menu id="screenshot" label="Screenshot">
     <item label="Screenshot in 5">
         <action name="Execute">
@@ -23,17 +39,22 @@
 <menu id="preferences" label="Preferences">
 	<!-- Openbox Sub Menu -->
     <menu id="openbox-config" label="Openbox">
+        <item label="Customize Look and Feel">
+            <action name="Execute">
+                <command>lxappearance</command>
+            </action>
+        </item>
         <item label="Openbox Configuration">
             <action name="Execute">
                 <command>obconf</command>
             </action>
         </item>
-        <item label="Menu Editor">
+        <item label="GUI Menu Editor">
             <action name="Execute">
                 <command>kickshaw</command>
             </action>
         </item>
-        <item label="Keybind Editor">
+        <item label="GUI Keybind Editor">
             <action name="Execute">
                 <command>obkey</command>
             </action>
@@ -77,11 +98,6 @@
     <menu id="CompositingPipeMenu" label="Compositor" execute="manjaro-compositor"/>
     <!-- System Sub Menu -->
     <menu id="system-settings" label="System">
-        <item label="LX Appearance">
-            <action name="Execute">
-                <command>lxappearance</command>
-            </action>
-        </item>
         <item label="Appearance">
             <action name="Execute">
                 <command>xfce4-appearance-settings</command>
@@ -149,22 +165,15 @@
         </action>
     </item>
     <separator/>
-    <!-- Disk Tools Sub Menu -->
-    <menu id="disk-tools"/>
-    <!-- Screenshot Sub Menu -->
+    <menu id="disk-utilities"/>
     <menu id="screenshot"/>
-    <!-- Applications Sub Menu -->
     <menu id="applications" label="Applications" execute="/usr/bin/obmenu-generator -S ~/.config/obmenu-generator/applications.pl"/>
     <separator/>
-    <!-- Places Sub Menu -->
     <menu id="pipe-placesmenu" label="Places" execute="manjaro-places-pipemenu --recent ~/"/>
     <separator/>
-    <!-- Preferences Sub Menu -->
     <menu id="preferences"/>
-    <!-- Keybinds Sub Menu -->
     <menu id="keybinds" label="Keybinds" execute="manjaro-kb-pipemenu"/>
     <separator/>
-    <!-- Help Sub Menu -->
     <menu id="help" label="Help and Info" execute="manjaro-help-pipemenu"/>
     <separator/>
     <item label="Switch Menu">

@@ -2,6 +2,24 @@
 
 <openbox_menu>
 
+<menu id="disk-utilities" label="Disk Tools">
+    <item label="Clonezilla">
+        <action name="Execute">
+            <command>termite -e "sudo clonezilla"</command>
+        </action>
+    </item>
+    <item label="Gparted">
+        <action name="Execute">
+            <command>gksu gparted</command>
+        </action>
+    </item>
+    <item label="Testdisk">
+        <action name="Execute">
+            <command>termite -e "sudo testdisk"</command>
+        </action>
+    </item>
+</menu>
+
 <menu id="screenshot" label="Screenshot">
     <item label="Screenshot in 5">
         <action name="Execute">
@@ -22,17 +40,22 @@
 
 <menu id="preferences" label="Preferences">
     <menu id="openbox" label="Openbox">
-        <item label="Configuration">
+        <item label="Customize Look and Feel">
+            <action name="Execute">
+                <command>lxappearance</command>
+            </action>
+        </item>
+        <item label="Openbox Configuration">
             <action name="Execute">
                 <command>obconf</command>
             </action>
         </item>
-        <item label="Menu Editor">
+        <item label="GUI Menu Editor">
             <action name="Execute">
                 <command>kickshaw</command>
             </action>
         </item>
-        <item label="Keybind Editor">
+        <item label="GUI Keybind Editor">
             <action name="Execute">
                 <command>obkey</command>
             </action>
@@ -118,6 +141,7 @@
         </action>
     </item>
     <separator/>
+    <menu id="disk-utilities"/>
     <menu id="screenshot"/>
     <menu id="applications" label="Applications" execute="/usr/bin/obmenu-generator -S ~/.config/obmenu-generator/applications.pl"/>
     <separator/>
