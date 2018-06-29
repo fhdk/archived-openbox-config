@@ -73,7 +73,7 @@
 =cut
 
 our $CONFIG = {
-    "editor" => "mousepad",
+    "editor" => "xed",
     "Linux::DesktopFiles" => {
         desktop_files_paths => [
             "/usr/share/applications",

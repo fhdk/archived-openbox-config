@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <openbox_menu>
-<menu id="disk-utilities" label="Disk Tools">
+<menu id="disk-utilities" label="Disk Utilities">
     <item label="Clonezilla">
         <action name="Execute">
             <command>termite -e "sudo clonezilla"</command>
         </action>
     </item>
-    <item label="Gparted">
+    <item label="Disks">
         <action name="Execute">
-            <command>gksu gparted</command>
+            <command>gnome-disks</command>
         </action>
     </item>
-    <item label="Testdisk">
+    <item label="USB Image Writer">
         <action name="Execute">
-            <command>termite -e "sudo testdisk"</command>
+            <command>mintstick -m iso</command>
         </action>
     </item>
 </menu>
@@ -37,6 +37,11 @@
 </menu>
 <menu id="preferences" label="Preferences">
     <menu id="openbox-config" label="Openbox">
+        <item label="Customize Look and Feel">
+            <action name="Execute">
+                <command>lxappearance</command>
+            </action>
+        </item>
         <item label="Openbox Configuration">
             <action name="Execute">
                 <command>obconf</command>
@@ -86,11 +91,6 @@
     <menu id="TintPipeMenu" label="Tint2" execute="manjaro-tint2-pipemenu"/>
     <menu id="CompositingPipeMenu" label="Compositor" execute="manjaro-compositor"/>
     <menu id="system-settings" label="System">
-        <item label="LX Appearance">
-            <action name="Execute">
-                <command>lxappearance</command>
-            </action>
-        </item>
         <item label="Appearance">
             <action name="Execute">
                 <command>xfce4-appearance-settings</command>
@@ -111,11 +111,6 @@
                 <command>arandr</command>
             </action>
         </item>
-        <item label="Root File Manager">
-            <action name="Execute">
-                <command>gksu pcmanfm</command>
-            </action>
-        </item>
         <item label="Settings Manager">
             <action name="Execute">
                 <command>xfce4-settings-manager</command>
@@ -125,7 +120,7 @@
     <separator/>
     <item label="Wallpaper">
         <action name="Execute">
-            <command>nitrogen</command>
+            <command>pacmanfm --desktop-pref</command>
         </action>
     </item>
     <item label="Panel Chooser">
