@@ -152,6 +152,11 @@
             <command>exo-open --launch WebBrowser</command>
         </action>
     </item>
+    <item label="Mail Reader">
+        <action name="Execute">
+            <command>exo-open --launch MailReader</command>
+        </action>
+    </item>
     <separator/>
     <menu id="disk-utilities"/>
     <menu id="screenshot"/>
