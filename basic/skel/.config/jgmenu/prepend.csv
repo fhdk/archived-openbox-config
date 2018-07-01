@@ -1,4 +1,4 @@
 Web browser,chromium,chromium
-File manager,thunar,system-file-manager
+File manager,pcmanfm,system-file-manager
 Terminal,termite,utilities-terminal
 ^sep()
