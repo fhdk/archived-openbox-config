@@ -120,7 +120,7 @@
     <separator/>
     <item label="Wallpaper">
         <action name="Execute">
-            <command>pacmanfm --desktop-pref</command>
+            <command>pcmanfm --desktop-pref</command>
         </action>
     </item>
     <item label="Panel Chooser">
