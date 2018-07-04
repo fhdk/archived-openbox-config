@@ -1,6 +1,7 @@
-lxsession &
+# launch thunar in daemon mode
+sleep 1; thunar --daemon &
 
-# compton
+# compositor
 sleep 1; manjaro-compositor --start &
 
 # enable numlock, commented out for laptop users
@@ -8,8 +9,12 @@ sleep 1; manjaro-compositor --start &
 
 # restore wallpaper
 sleep 1; nitrogen --restore &
+
+# launch bars
 sleep 1; polybar -c ~/.config/polybar/config openbox-bar &
 sleep 1; manjaro-tint2-session &
+
+# launch conky
 manjaro-conky-session &
 
 # Openbox autostart
